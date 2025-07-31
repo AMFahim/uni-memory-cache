@@ -1,0 +1,60 @@
+{
+  "name": "uni-memory-cache",
+  "version": "1.0.0",
+  "description": "A simple TTL and LRU based in-memory cache for Node.js and NestJS",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "browser": "dist/uni-memory-cache.browser.js",
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "npm run build:ts && npm run build:browser",
+    "build:ts": "tsc",
+    "build:browser": "rollup -c rollup.config.ts --bundleConfigAsCjs",
+    "test": "ts-node test/test.ts",
+    "benchmark": "ts-node test/benchmark.ts",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "cache",
+    "in-memory",
+    "ttl",
+    "lru",
+    "uni-memory-cache",
+    "in-memory-cache",
+    "memory-cache",
+    "nodejs",
+    "typescript",
+    "universal-in-memory-cache"
+  ],
+  "author": "Abdul Mozid Fahim",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.4",
+    "@types/node": "^24.1.0",
+    "rollup": "^4.46.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.js",
+      "browser": "./dist/uni-memory-cache.browser.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AMFahim/uni-memory-cache.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AMFahim/uni-memory-cache/issues"
+  },
+  "homepage": "https://github.com/AMFahim/uni-memory-cache#readme"
+}
