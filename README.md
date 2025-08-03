@@ -1,4 +1,4 @@
-# uni-memory-cache (Universal memory cache)
+# uni-memory-cache (Universal in memory cache)
 
 A high-performance, lightweight TTL (Time-To-Live) and LRU (Least Recently Used) based in-memory cache for both Node.js and browser environments. Built with TypeScript for type safety and excellent developer experience.
 
