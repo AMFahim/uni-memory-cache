@@ -1,6 +1,6 @@
-# uni-memory-cache
+# uni-memory-cache (Universal memory cache)
 
-A high-performance, lightweight TTL (Time-To-Live) and LRU (Least Recently Used) based in-memory cache library for both Node.js and browser environments. Built with TypeScript for type safety and excellent developer experience.
+A high-performance, lightweight TTL (Time-To-Live) and LRU (Least Recently Used) based in-memory cache for both Node.js and browser environments. Built with TypeScript for type safety and excellent developer experience.
 
 [![npm version](https://badge.fury.io/js/uni-memory-cache.svg)](https://badge.fury.io/js/uni-memory-cache)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
